@@ -1,5 +1,5 @@
 <?php
-namespace IMDterest\Classes;
+include_once ("Db.php");
 
 class User
 {
