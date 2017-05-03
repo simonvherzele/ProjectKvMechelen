@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php include_once("includes/header.inc.php") ?>
+    <?php include_once("includes/headerSponsor.inc.php") ?>
 
     <h1>Aanbieding aanvragen</h1>
 
@@ -35,6 +35,6 @@
         <button type="submit">Save</button>
     </form>
 
-    <?php include_once("includes/nav.inc.php") ?>
+    <?php include_once("includes/navSponsor.inc.php") ?>
 </body>
 </html>

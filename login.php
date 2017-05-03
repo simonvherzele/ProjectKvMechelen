@@ -11,7 +11,7 @@
 
         $user->canLogin();
 
-        header('location :index.php');
+        header('location :indexSupporter.php');
     }
 
 ?><!DOCTYPE html>

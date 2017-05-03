@@ -17,7 +17,7 @@
 
         $user->register();
 
-        header('Location: index.php');
+        header('Location: indexSupporter.php');
     }
 
 ?><!doctype html>

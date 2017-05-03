@@ -15,7 +15,7 @@
 <body>
 <div id="container">
 
-    <?php include_once("includes/header.inc.php") ?>
+    <?php include_once("includes/headerSupporter.inc.php") ?>
 
     <h1>Aanbiedingen</h1>
 
@@ -28,7 +28,7 @@
         <?php endforeach; ?>
     </div>
 
-    <?php include_once("includes/nav.inc.php") ?>
+    <?php include_once("includes/navSupporter.inc.php") ?>
 
 </div>
 </body>

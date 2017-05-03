@@ -11,13 +11,13 @@
 <body>
 	<div id="container">
 
-		<?php include_once("includes/header.inc.php") ?>
+		<?php include_once("includes/headerSupporter.inc.php") ?>
 
 		<section id="content">
 			
 		</section>
 
-		<?php include_once("includes/nav.inc.php") ?>
+		<?php include_once("includes/navSupporter.inc.php") ?>
 		
 	</div>
 </body>
