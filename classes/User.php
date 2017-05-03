@@ -1,5 +1,5 @@
 <?php
-include_once ("Db.php");
+include_once("Db.php");
 
 class User
 {
@@ -111,7 +111,7 @@ class User
 
     public function resizeUserImage($imageFile, $imageType, $imageName)
     {
-        list ($width, $height) = getimagesize($imageFile);
+        list($width, $height) = getimagesize($imageFile);
         $w = 800;
         $h = 800;
         $r = $width/$height;
@@ -122,7 +122,7 @@ class User
             $height = ceil($height-($height*abs($r-$w/$h)));
         }
 
-        if($w/$h > $r){
+        if ($w/$h > $r) {
             $newwidth = $h*$r;
             $newheight = $h;
         } else {
@@ -130,12 +130,12 @@ class User
             $newwidth = $w;
         }
 
-        if($imageType == IMAGETYPE_JPEG){
+        if ($imageType == IMAGETYPE_JPEG) {
             $src = imagecreatefromjpeg($imageFile);
             $dst = imagecreatetruecolor($newwidth, $newheight);
             imagecopyresampled($dst, $src, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
             imagejpeg($dst, "./IMDterest/uploads/" . $imageName);
-        } else if ($imageType == IMAGETYPE_PNG){
+        } elseif ($imageType == IMAGETYPE_PNG) {
             $src = imagecreatefrompng($imageFile);
             $dst = imagecreatetruecolor($newwidth, $newheight);
             imagecopyresampled($dst, $src, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
@@ -210,5 +210,4 @@ class User
 
         $_SESSION['userID'] = $userid;
     }
-
 }
