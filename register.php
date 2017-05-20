@@ -32,24 +32,27 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="register">
+
+<?php include_once("includes/headerRegister.inc.php") ?>
+
+<div id="container">
     <form action="" method="post">
-        <label for="firstname">Firstname</label>
-        <input type="text" name="firstname" id="firstname">
+        <input type="text" name="firstname" id="firstname" placeholder="Firstname"><br>
 
-        <label for="lastname">Lastname</label>
-        <input type="text" name="lastname" id="lastname">
+        <input type="text" name="lastname" id="lastname" placeholder="Lastname"><br>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
+        <input type="text" name="email" id="email" placeholder="Email"><br>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" placeholder="Password"><br>
 
-        <label for="avatar">Avatar</label>
-        <input type="file"  name="avatar" id="avatar">
+        <!--<input type="file"  name="avatar" id="avatar"><br>-->
 
         <button type="submit">Register</button>
     </form>
+</div>
+
+<hr id="bottomLine">
+
 </body>
 </html>

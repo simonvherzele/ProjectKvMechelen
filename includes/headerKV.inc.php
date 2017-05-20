@@ -2,6 +2,6 @@
 <link rel="stylesheet" href="css/style.css">
 
 <header>
-    <a id="logo" href="indexKV.php">logo</a>
+    <a id="logoZonderTekst" href="indexKV.php">logo</a>
     <a id="logout" href="includes/logout.inc.php">Logout</a>
 </header>

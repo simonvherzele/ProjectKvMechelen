@@ -5,7 +5,29 @@ body
 	background-position-y: -20em;
 }
 
+#register
+{
+	font-family: 'Raleway', Verdana, sans-serif;
+	background-image: url("../images/bgFade.png");
+	background-position-y: -15em;
+}
+
 #logo
+{
+	background-image: url("../images/logo.png");
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 85%;
+	text-indent: -9999px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	height: 150px;
+	background-color: transparent;
+}
+
+#logoZonderTekst
 {
 	background-image: url("../images/logoZonderTekst.png");
 	display: block;
@@ -151,3 +173,42 @@ nav
 	border-radius: 10px;
 	margin-top: 5%;
 }
+
+h1
+{
+	color: #c24445;
+}
+
+#container
+{
+	text-align: center;
+	margin-top: 15%;
+}
+
+input
+{
+	font-size: 100%;
+	margin-bottom: 2em;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+button
+{
+	font-size: 100%;
+	background-color: #c24445;
+	color: white;
+	border-radius: 15px;
+	border: none;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-bottom: 2em;
+}
+
+#here
+{
+	color: #c24445;
+	text-decoration: none;
+}
+

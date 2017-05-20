@@ -22,17 +22,24 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <form action="" method="post">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
+<body id="register">
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+<?php include_once("includes/headerRegister.inc.php") ?>
+
+<div id="container">
+    <form action="" method="post">
+        <input type="text" name="email" id="email" placeholder="Email"><br>
+
+        <input type="password" name="password" id="password" placeholder="Password"><br>
 
         <button type="submit">Login</button>
     </form>
 
-    <p>Or sign up <a href="register.php">Here</a>!</p>
+    <p>Or sign up <a id="here" href="register.php">Here</a>!</p>
+
+</div>
+
+<hr id="bottomLine">
+
 </body>
 </html>
