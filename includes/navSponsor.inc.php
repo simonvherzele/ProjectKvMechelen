@@ -1,5 +1,10 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+
 <nav>
-    <a href="aanbiedingSponsor.php"><img src="images/aanbieding.png" alt="aanbiedingen"></a>
-    <a href=""><img src="images/inruilshop.png" alt="shop"></a>
-    <a href=""><img src="images/account.png" alt="account"></a>
+    <a href="aanbiedingSponsor.php">aanbiedingen</a>
+    <a href="">shop</a>
+    <a href="">account</a>
 </nav>
+
+<hr id="bottomLine">

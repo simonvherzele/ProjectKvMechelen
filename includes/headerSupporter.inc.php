@@ -1,4 +1,4 @@
 <header>
-    <a href="indexSponsor.php"><img src="" alt="logo"></a>
-    <a href="includes/logout.inc.php"><img src="images/logout.png" alt="logout">Logout</a>
+    <a id="logo" href="indexSponsor.php">logo</a>
+    <a id="logout" href="includes/logout.inc.php">Logout</a>
 </header>

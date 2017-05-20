@@ -1,5 +1,10 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+
 <nav>
-    <a href="aanbiedingKV.php"><img src="images/aanbieding.png" alt="aanbiedingen"></a>
-    <a href=""><img src="images/inruilshop.png" alt="shop"></a>
-    <a href=""><img src="images/ranking.png" alt="account"></a>
+    <a id="aanbieding" href="aanbiedingKV.php">aanbiedingen</a>
+    <a id="inruilshop" href="shopKV.php">shop</a>
+    <a id="ranking" href="indexKV.php">ranking</a>
 </nav>
+
+<hr id="bottomLine">

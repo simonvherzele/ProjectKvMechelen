@@ -1,4 +1,7 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+
 <header>
-    <a href="indexKV.php"><img src="" alt="logo"></a>
-    <a href="includes/logout.inc.php"><img src="images/logout.png" alt="logout">Logout</a>
+    <a id="logo" href="indexKV.php">logo</a>
+    <a id="logout" href="includes/logout.inc.php">Logout</a>
 </header>

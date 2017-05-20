@@ -1,16 +1,137 @@
-body{
-
+body
+{
+	font-family: 'Raleway', Verdana, sans-serif;
+	background-image: url("../images/bgFade.png");
+	background-position-y: -20em;
 }
 
-header{
-	background-color: lightgrey;
+#logo
+{
+	background-image: url("../images/logoZonderTekst.png");
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 85%;
+	text-indent: -9999px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80px;
+	height: 80px;
+	background-color: transparent;
+	margin-left: 0.1em;
+}
+
+#logout
+{
+	background-image: url("../images/logout.png");
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 85%;
+	text-indent: -9999px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80px;
+	height: 80px;
+	background-color: transparent;
+	float: right;
+	margin-left: 14em;
+}
+
+#aanbieding:link,
+#aanbieding:visited,
+#aanbieding:hover,
+#aanbieding:active
+{
+	background-image: url("../images/aanbieding.png");
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 75%;
+	text-indent: -9999px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80px;
+	background-color: #c24445;
+	padding-left: 8%;
+	padding-right: 8%;
+	border: solid 1px white;
+}
+
+#aanbieding:hover
+{
+	background-color: #edab39;
+}
+
+#inruilshop:link,
+#inruilshop:visited,
+#inruilshop:hover,
+#inruilshop:active
+{
+	background-image: url("../images/inruilshop.png");
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 90%;
+	text-indent: -9999px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80px;
+	height: 80px;
+	background-color: #c24445;
+	padding-left: 8%;
+	padding-right: 8%;
+	border: solid 1px white;
+}
+
+#inruilshop:hover
+{
+	background-color: #edab39;
+}
+
+#ranking:link,
+#ranking:visited,
+#ranking:hover,
+#ranking:active
+{
+	background-image: url("../images/ranking.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 50%;
+	text-indent: -9999px;
+	width: 80px;
+	height: 80px;
+	background-color: #c24445;
+	padding-left: 8%;
+	padding-right: 8%;
+	border: solid 1px white;
+}
+
+#ranking:hover
+{
+	background-color: #edab39;
+}
+
+#bottomLine
+{
+	background-color: #edab39;
+	position: relative;
+	border: none;
+	height: 10px;
+	bottom: 0;
+	z-index: 1;
+	overflow: hidden;
+}
+
+header
+{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
-nav{
-	background-color: #c24445;
+nav
+{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -18,7 +139,8 @@ nav{
 	bottom: 0;
 }
 
-.aanbieding{
+.aanbieding
+{
 	width: 80%;
 	margin: auto;
 	background-color: #c24445;
