@@ -2,9 +2,9 @@
 <link rel="stylesheet" href="css/style.css">
 
 <nav>
-    <a href="aanbiedingSupporter.php">aanbiedingen</a>
-    <a href="">shop</a>
-    <a href="">acccount</a>
+    <a id="aanbieding" href="aanbiedingSupporter.php">aanbiedingen</a>
+    <a id="inruilshop" href="">shop</a>
+    <a id="ranking" href="">acccount</a>
 </nav>
 
 <hr id="bottomLine">

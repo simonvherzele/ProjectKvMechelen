@@ -7,14 +7,14 @@
             $lastname = $_POST['lastname'];
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $avatar = $_POST['avatar'];
+            //$avatar = $_POST['avatar'];
 
             $user = new User();
             $user->setFirstname($firstname);
             $user->setLastname($lastname);
             $user->setEmail($email);
             $user->setPassword($password);
-            $user->setAvatar($avatar);
+            //$user->setAvatar($avatar);
 
             $user->register();
         //}
@@ -36,7 +36,7 @@
 
 <?php include_once("includes/headerRegister.inc.php") ?>
 
-<div id="container">
+<div id="containerRegister">
     <form action="" method="post">
         <input type="text" name="firstname" id="firstname" placeholder="Firstname"><br>
 

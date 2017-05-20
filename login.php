@@ -26,7 +26,7 @@
 
 <?php include_once("includes/headerRegister.inc.php") ?>
 
-<div id="container">
+<div id="containerRegister">
     <form action="" method="post">
         <input type="text" name="email" id="email" placeholder="Email"><br>
 
