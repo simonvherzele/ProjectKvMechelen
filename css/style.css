@@ -3,7 +3,8 @@ body{
 }
 
 header{
-    background-color: lightgrey;
+    background-image: url("../images/navGradient.png");
+    background-position-y: 80%;
 }
 
 nav{

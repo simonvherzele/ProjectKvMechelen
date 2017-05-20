@@ -1,5 +1,5 @@
 <?php
-include_once('classes/AanbiedingUpload.php');
+include_once('classes/Aanbieding.php');
 
 ?><!DOCTYPE html>
 <html lang="en">

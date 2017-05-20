@@ -1,22 +1,23 @@
 <?php
     include_once("classes/User.php");
 
-    if(!empty($_POST)){
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $avatar = $_POST['avatar'];
+    if (!empty($_POST)) {
+        //if (!empty($_FILES["avatar"])) {
+            $firstname = $_POST['firstname'];
+            $lastname = $_POST['lastname'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $avatar = $_POST['avatar'];
 
-        $user = new User();
-        $user->setFirstname($firstname);
-        $user->setLastname($lastname);
-        $user->setEmail($email);
-        $user->setPassword($password);
-        $user->setAvatar($avatar);
+            $user = new User();
+            $user->setFirstname($firstname);
+            $user->setLastname($lastname);
+            $user->setEmail($email);
+            $user->setPassword($password);
+            $user->setAvatar($avatar);
 
-        $user->register();
-
+            $user->register();
+        //}
         header('Location: indexSupporter.php');
     }
 
@@ -45,7 +46,7 @@
         <label for="password">Password</label>
         <input type="password" name="password" id="password">
 
-        <label for="fileToUpload">Avatar</label>
+        <label for="avatar">Avatar</label>
         <input type="file"  name="avatar" id="avatar">
 
         <button type="submit">Register</button>

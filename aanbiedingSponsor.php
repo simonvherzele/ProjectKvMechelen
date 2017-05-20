@@ -1,5 +1,5 @@
 <?php
-    include_once('classes/AanbiedingUpload.php');
+    include_once('classes/Aanbieding.php');
 
     if (!empty($_POST)) {
         $aanbiedingName = $_POST['aanbiedingName'];

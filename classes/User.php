@@ -79,34 +79,47 @@ class User
 
     public function register()
     {
-        // connection with database
-        $conn = Db::getInstance();
+        /*$target_dir = "./images/avatar/";
+        $tmp_name = $_FILES['avatar']['tmp_name'];
+        $t = time();
+        $new_name =  $t;
+        //explode splits de string in twee. de eerste meegegeven parameter geeft aan waar exact gesplits moet worden, de tweede parameter waarin
+        $type = explode("/", $_FILES['avatar']['type']);
+        $type = $type[1];
 
-        // compare email from input to user emails in database
-        $statementCheck = $conn->prepare("SELECT * FROM users WHERE email = :email;");
-        $statementCheck->bindValue(":email", $this->getEmail());
-        $statementCheck->execute();
-        $row = $statementCheck->fetch(\PDO::FETCH_ASSOC);
+        $stringToDB = $target_dir. $new_name . "." . $type;
 
-        if (!$row) { // if query returns no rows add new user
+        if (move_uploaded_file($tmp_name, $stringToDB)) {*/
+            // connection with database
+            $conn = Db::getInstance();
 
+            // compare email from input to user emails in database
+            $statementCheck = $conn->prepare("SELECT * FROM users WHERE email = :email;");
+            $statementCheck->bindValue(":email", $this->getEmail());
+            $statementCheck->execute();
+            $row = $statementCheck->fetch(\PDO::FETCH_ASSOC);
+
+            if (!$row) { // if query returns no rows add new user
                 $options = [
                     'cost' => 12,
                 ];
-            $password = $this->getPassword();
-            $hashedPassword = password_hash($password, PASSWORD_DEFAULT, $options);
+                $password = $this->getPassword();
+                $hashedPassword = password_hash($password, PASSWORD_DEFAULT, $options);
 
-            $statement = $conn->prepare("INSERT INTO Users (email, firstname, lastname, password, avatar) VALUES (:email, :firstname, :lastname, :password, :avatar);");
-            $statement->bindValue(":email", $this->getEmail());
-            $statement->bindValue(":firstname", $this->getFirstname());
-            $statement->bindValue(":lastname", $this->getLastname());
-            $statement->bindValue(":password", $hashedPassword);
-            $statement->bindValue(":avatar", $this->getAvatar());
+                $statement = $conn->prepare("INSERT INTO Users (email, firstname, lastname, password, avatar) VALUES (:email, :firstname, :lastname, :password, :avatar);");
+                $statement->bindValue(":email", $this->getEmail());
+                $statement->bindValue(":firstname", $this->getFirstname());
+                $statement->bindValue(":lastname", $this->getLastname());
+                $statement->bindValue(":password", $hashedPassword);
+                $statement->bindValue(":avatar", $this->getAvatar());
+                //$statement->bindValue(":avatar", $stringToDB);
 
-            $statement->execute();
-        } else { //else return error
+                $statement->execute();
+            } else { //else return error
                 throw new \Exception("This email is already in use");
-        }
+            }
+        //}
+
     }
 
     public function resizeUserImage($imageFile, $imageType, $imageName)

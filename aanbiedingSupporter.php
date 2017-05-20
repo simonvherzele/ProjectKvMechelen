@@ -1,5 +1,5 @@
 <?php
-    include_once('classes/AanbiedingUpload.php');
+    include_once('classes/Aanbieding.php');
 
     $aanbieding = new Aanbieding();
     $aanbieding->feed();
@@ -27,6 +27,7 @@
 
         <?php endforeach; ?>
     </div>
+
 
     <?php include_once("includes/navSupporter.inc.php") ?>
 
