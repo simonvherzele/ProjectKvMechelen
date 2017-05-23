@@ -1,4 +1,5 @@
 <?php
+include_once("includes/no-session.inc.php");
 
 ?><!DOCTYPE html>
 <html lang="en">

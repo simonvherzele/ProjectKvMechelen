@@ -1,5 +1,6 @@
 <?php
-    include_once('classes/Aanbieding.php');
+include_once("includes/no-session.inc.php");
+include_once('classes/Aanbieding.php');
 
     $aanbieding = new Aanbieding();
     $aanbieding->feed();

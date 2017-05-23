@@ -1,6 +1,8 @@
 <?php
     include_once("classes/User.php");
 
+    session_start();
+
     if (!empty($_POST)) {
         //if (!empty($_FILES["avatar"])) {
             $firstname = $_POST['firstname'];
@@ -17,6 +19,8 @@
             //$user->setAvatar($avatar);
 
             $user->register();
+
+            $_SESSION['email'] = $email;
         //}
         header('Location: indexSupporter.php');
     }

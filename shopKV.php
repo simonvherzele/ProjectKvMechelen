@@ -1,4 +1,5 @@
 <?php
+include_once("includes/no-session.inc.php");
 include_once('classes/Shop.php');
 
     if (!empty($_POST)) {

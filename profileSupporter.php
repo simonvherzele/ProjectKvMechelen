@@ -1,11 +1,8 @@
 <?php
 include_once("includes/no-session.inc.php");
-include_once('classes/Shop.php');
 
-$shop = new Shop();
-$shop->feed();
 
-?><!DOCTYPE html>
+?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,13 +15,15 @@ $shop->feed();
 
         <?php include_once("includes/headerSupporter.inc.php") ?>
 
-        <h1>Inruilshop</h1>
-            <?php foreach($shop->Feed() as $f): ?>
-                <div class="shopItem">
-                    <p><?php echo $f['name']; ?></p><br>
-                    <p><?php echo $f['price']; ?></p>
-                </div>
-            <?php endforeach; ?>
+        <h1>Profile</h1>
+
+        <img id="profilePic" src="images/account.png" alt="account">
+
+        <div id="profile">
+            <p><?php echo $_SESSION['email']; ?></p>
+        </div>
+
+        <h1 id="kakske">500</h1>
 
         <?php include_once("includes/navSupporter.inc.php") ?>
 
