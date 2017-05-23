@@ -56,7 +56,7 @@
     </form>
 </div>
 
-<hr id="bottomLine">
+<hr id="bottomLineRegister">
 
 </body>
 </html>

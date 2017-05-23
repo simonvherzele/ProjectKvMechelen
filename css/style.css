@@ -163,12 +163,26 @@ body
 #bottomLine
 {
 	background-color: #edab39;
-	position: relative;
+	position: absolute;
 	border: none;
 	height: 10px;
 	bottom: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
 	z-index: 1;
 	overflow: hidden;
+}
+
+#bottomLineRegister
+{
+	background-color: #edab39;
+	position: absolute;
+	height: 50px;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
 }
 
 header
@@ -244,13 +258,16 @@ button
 
 .shopItem
 {
+	background-image: url("../images/square.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100%;
+	justify-content: space-around;
 	display: inline-block;
 	text-align: center;
-	width: 129px;
+	width: 130px;
 	height: 100px;
-	background-color: #c24445;
 	color: white;
-	margin-left: 1px;
 	margin-top: 3px;
 }
 
@@ -300,6 +317,7 @@ p
 	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10em;
 }
 
 

@@ -9,7 +9,7 @@
         $user->setEmail($email);
         $user->setPassword($password);
 
-        $user->canLogin();
+        $user->login();
 
         header('location :indexSupporter.php');
     }
@@ -39,7 +39,7 @@
 
 </div>
 
-<hr id="bottomLine">
+<hr id="bottomLineRegister">
 
 </body>
 </html>
