@@ -16,11 +16,13 @@
 
 		<?php include_once("includes/headerSupporter.inc.php") ?>
 
+        <h1>Dichtsbijzijnde aanbiedingen</h1>
+
 		<section id="content">
 			<?php foreach ($res as $key => $p) : ?>
 			<div class="aanbieding">
-					<p><?php echo $p['name']; ?></p>
-					<p><?php echo $p['price']; ?></p>
+                <p><?php echo $p['name']; ?></p>
+                <a id="pijl" href="index.php">pijl</a>
 			</div>
 			<?php endforeach; ?>
 		</section>

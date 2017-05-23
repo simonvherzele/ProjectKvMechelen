@@ -21,10 +21,10 @@
 
     <div>
         <?php foreach($aanbieding->Feed() as $f): ?>
-
-            <p><?php echo $f['name']; ?></p>
-            <p><?php echo $f['price']; ?></p>
-
+            <div class="aanbieding">
+                <p><?php echo $f['name']; ?></p>
+                <a id="pijl" href="index.php">pijl</a>
+            </div>
         <?php endforeach; ?>
     </div>
 

@@ -13,24 +13,20 @@ $shop->feed();
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="container">
+    <div id="container">
 
-    <?php include_once("includes/headerSupporter.inc.php") ?>
+        <?php include_once("includes/headerSupporter.inc.php") ?>
 
-    <h1>Aanbiedingen</h1>
+        <h1>Inruilshop</h1>
+            <?php foreach($shop->Feed() as $f): ?>
+                <div class="shopItem">
+                    <p><?php echo $f['name']; ?></p><br>
+                    <p><?php echo $f['price']; ?></p>
+                </div>
+            <?php endforeach; ?>
 
-    <div>
-        <?php foreach($shop->Feed() as $f): ?>
+        <?php include_once("includes/navSupporter.inc.php") ?>
 
-            <p><?php echo $f['name']; ?></p>
-            <p><?php echo $f['price']; ?></p>
-
-        <?php endforeach; ?>
     </div>
-
-
-    <?php include_once("includes/navSupporter.inc.php") ?>
-
-</div>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <nav>
     <a id="aanbieding" href="aanbiedingKV.php">aanbiedingen</a>
     <a id="inruilshop" href="shopKV.php">shop</a>
-    <a id="ranking" href="indexKV">ranking</a>
+    <a id="ranking" href="indexKV.php">ranking</a>
 </nav>
 
 <hr id="bottomLine">
