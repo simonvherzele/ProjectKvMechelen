@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 abstract class Db
 {
     private static $conn = null;
@@ -10,7 +11,7 @@ abstract class Db
                 return self::$conn;
         } else {
             // if there isn't a connection, add it
-                self::$conn = new \PDO("mysql:host=localhost; dbname=projectkv", "root", "");
+                self::$conn = new \PDO("mysql:host=localhost; dbname=Malinwallet", "root", "");
             return self::$conn;
         }
     }

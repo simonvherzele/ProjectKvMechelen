@@ -1,6 +1,8 @@
 <?php
-    include_once("classes/User.php");
-
+    include_once "classes/Db.php";
+    include_once "classes/User.php";
+    session_start();
+    
     if(!empty($_POST)){
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -11,7 +13,6 @@
 
         $user->login();
 
-        header('location :indexSupporter.php');
     }
 
 ?><!DOCTYPE html>
@@ -23,23 +24,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="register">
-
-<?php include_once("includes/headerRegister.inc.php") ?>
+<div id="container">
+<header>
+    <a id="logo" href="#">logo</a>
+</header>
 
 <div id="containerRegister">
     <form action="" method="post">
         <input type="text" name="email" id="email" placeholder="Email"><br>
 
-        <input type="password" name="password" id="password" placeholder="Password"><br>
+        <input type="password" name="password" id="password" placeholder="Wachtwoord"><br>
 
         <button type="submit">Login</button>
     </form>
 
-    <p>Or sign up <a id="here" href="register.php">Here</a>!</p>
+    <p>Of registreer je <a id="here" href="register.php">Hier</a>!</p>
 
 </div>
 
 <hr id="bottomLineRegister">
-
+</div>
 </body>
 </html>
